@@ -23,6 +23,7 @@ dependencies = [
     "uvicorn==0.48.0",
 ]
 
+<<<<<<< HEAD
 [project.optional-dependencies]
 ingest = [
     "docling==2.96.0",
@@ -31,6 +32,8 @@ ingest = [
 [tool.hatch.build.targets.wheel]
 packages = ["app"]
 
+=======
+>>>>>>> b914993 (Document backend import setup)
 [tool.uv]
 add-bounds = "exact"
 exclude-newer = "7 days"
