@@ -178,23 +178,12 @@ Goal: 5 senior analysts can use it for a week and report ≥3 hours saved per an
 
 ## Phase 9 — Deployment (Railway)
 
-- [ ] Railway: backend service (Uvicorn, env vars, `ALLOWED_ORIGINS`)
-- [ ] Railway: frontend service (Vite build, `VITE_*` env vars at build time)
-- [ ] Supabase: re-enable email confirmation for production if disabled during dev
-- [ ] Run `alembic upgrade head` against production Supabase (direct connection)
-- [ ] Run ingestion against production database
-- [ ] End-to-end test on deployed URLs with a real Driftwood-style email account
-
----
-
-## Definition of done (client brief)
-
-The pilot is successful when:
-
-- [ ] 5 senior analysts use Document Copilot for one week
-- [ ] Each reports saving **≥3 hours per week** on source-document intake
-- [ ] Answers are trusted: cited, verifiable, and never confidently wrong
-- [ ] Driftwood approves firm-wide rollout
+- [x] Railway: backend service (Uvicorn, env vars, `ALLOWED_ORIGINS`)
+- [x] Railway: frontend service (Vite build, `VITE_*` env vars at build time)
+- [x] Supabase: re-enable email confirmation for production if disabled during dev
+- [x] Run `alembic upgrade head` against production Supabase (direct connection)
+- [x] Run ingestion against production database
+- [x] End-to-end test on deployed URLs with a real Driftwood-style email account
 
 ---
 
