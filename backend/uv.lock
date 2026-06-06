@@ -935,7 +935,6 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "alembic" },
-    { name = "docling" },
     { name = "fastapi" },
     { name = "httpx" },
     { name = "openai" },
@@ -951,6 +950,11 @@ dependencies = [
     { name = "uvicorn" },
 ]
 
+[package.optional-dependencies]
+ingest = [
+    { name = "docling" },
+]
+
 [package.dev-dependencies]
 dev = [
     { name = "ipykernel" },
@@ -961,7 +965,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "alembic", specifier = "==1.18.4" },
-    { name = "docling", specifier = "==2.96.0" },
+    { name = "docling", marker = "extra == 'ingest'", specifier = "==2.96.0" },
     { name = "fastapi", specifier = "==0.136.3" },
     { name = "httpx", specifier = "==0.28.1" },
     { name = "openai", specifier = "==2.38.0" },
@@ -976,6 +980,7 @@ requires-dist = [
     { name = "tiktoken", specifier = "==0.12.0" },
     { name = "uvicorn", specifier = "==0.48.0" },
 ]
+provides-extras = ["ingest"]
 
 [package.metadata.requires-dev]
 dev = [

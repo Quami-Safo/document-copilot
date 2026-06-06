@@ -141,6 +141,7 @@ Load filing metadata into Supabase:
 
 ```bash
 cd backend
+uv sync --extra ingest
 uv run python -m ingest.load_source_documents
 ```
 
